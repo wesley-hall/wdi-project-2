@@ -1,0 +1,150 @@
+@import '~mapbox-gl/dist/mapbox-gl.css';
+
+// VARIABLES - COLOURS
+$color-skiddle-blue: #46c3be;
+$color-event-text: white;
+$color-event-fest: purple;
+$color-event-live: tomato;
+$color-event-club: limegreen;
+$color-event-date: red;
+$color-event-theatre: blue;
+$color-event-comedy: black;
+$color-event-exhib: burlywood;
+$color-event-kids: orange;
+$color-event-barpub: brown;
+$color-event-lgb: DarkOrchid;
+$color-event-sport: green;
+$color-event-arts: midnightblue;
+
+.container-home {
+  max-width: 960px
+}
+
+main.section {
+  margin-top: 20px;
+}
+
+.tile.is-ancestor {
+  flex-wrap: wrap;
+  a {
+    width: 100%;
+  .tile.is-child.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 175px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $color-event-text;
+    }
+  }
+}
+
+#fest {
+  background-color: $color-event-fest;
+}
+
+#live {
+  background-color: $color-event-live;
+}
+
+#club {
+  background-color: $color-event-club;
+}
+
+#date {
+  background-color: $color-event-date;
+}
+
+#theatre {
+  background-color: $color-event-theatre;
+}
+
+#comedy {
+  background-color: $color-event-comedy;
+}
+
+#exhib {
+  background-color: $color-event-exhib;
+}
+
+#kids {
+  background-color: $color-event-kids;
+}
+
+#barpub {
+  background-color: $color-event-barpub;
+}
+
+#lgb {
+  background-color: $color-event-lgb;
+}
+
+#sport {
+  background-color: $color-event-sport;
+}
+
+#arts {
+  background-color: $color-event-arts;
+}
+
+.navbar {
+  .navbar-item.has-dropdown.is-hoverable {
+    margin-right: 20px;
+  }
+}
+.card {
+  height: 100%;
+  .card-header-title{
+    min-height: 120px;
+  }
+}
+
+a.button-skiddle {
+  margin-top: 10px;
+  background-color: $color-skiddle-blue;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h4.location-title {
+  margin-top: 15px;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+.map {
+  margin-top: 20px;
+  width: 85%;
+  height: 300px;
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  .footnav {
+    margin-bottom: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      color: #4a4a4a;
+      display: block;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      padding: 0.375rem 1rem;
+      position: relative;
+      text-align: center;
+    }
+  }
+}
