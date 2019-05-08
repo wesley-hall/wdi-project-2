@@ -34,7 +34,7 @@ class Footer extends React.Component {
               </div>
             )}
           </div>
-          <p><strong>G T F O</strong> made with &hearts; by <strong>GA</strong> & <strong>WH</strong></p>
+          <p><strong>Get Out in London</strong> made with &hearts; by <strong>GA</strong> & <strong>WH</strong></p>
         </div>
       </footer>
     )

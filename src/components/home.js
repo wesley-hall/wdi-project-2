@@ -28,7 +28,7 @@ class Home extends React.Component {
       <main className="hero is-white is-fullheight">
         <div className="hero-body">
           <div className="container container-home">
-            <h2 className="title">G T F O</h2>
+            <h2 className="title">Get Out in London</h2>
             <div className="tile is-ancestor">
               {this.state.eventcodes.map(eventcode =>
                 <div key={eventcode.code} className="tile is-parent is-3">
