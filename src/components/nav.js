@@ -26,7 +26,7 @@ class Nav extends React.Component {
     return(
       <nav className="navbar is-dark is-fixed-top">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item">G T F O</Link>
+          <Link to="/" className="navbar-item">Get Out in London</Link>
           <a role="button"
             className={`navbar-burger ${this.state.navbarOpen ? 'is-active' : ''}`}
             onClick={this.toggleNavbar}
