@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack-dev-server --mode=development",
     "build": "webpack -p",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Grigorios Anagnostopoulos and Wesley Hall",
   "license": "ISC",
