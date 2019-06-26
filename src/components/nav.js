@@ -5,22 +5,20 @@ class Nav extends React.Component {
   constructor() {
     super()
 
-    this.state = {
-      eventcodes: [
-        { code: 'fest', name: 'Festivals'},
-        { code: 'live', name: 'Live Music'},
-        { code: 'club', name: 'Clubbing/Dance Music'},
-        { code: 'date', name: 'Dating'},
-        { code: 'theatre', name: 'Theatre/Dance'},
-        { code: 'comedy', name: 'Comedy'},
-        { code: 'exhib', name: 'Exhibitions and Attractions'},
-        { code: 'kids', name: 'Kids/Family'},
-        { code: 'barpub', name: 'Bar/Pub'},
-        { code: 'lgb', name: 'Gay/Lesbian'},
-        { code: 'sport', name: 'Sporting'},
-        { code: 'arts', name: 'The Arts'}
-      ]
-    }
+    this.eventcodes = [
+      { code: 'fest', name: 'Festivals'},
+      { code: 'live', name: 'Live Music'},
+      { code: 'club', name: 'Clubbing/Dance Music'},
+      { code: 'date', name: 'Dating'},
+      { code: 'theatre', name: 'Theatre/Dance'},
+      { code: 'comedy', name: 'Comedy'},
+      { code: 'exhib', name: 'Exhibitions and Attractions'},
+      { code: 'kids', name: 'Kids/Family'},
+      { code: 'barpub', name: 'Bar/Pub'},
+      { code: 'lgb', name: 'Gay/Lesbian'},
+      { code: 'sport', name: 'Sporting'},
+      { code: 'arts', name: 'The Arts'}
+    ]
   }
   render() {
     return(
