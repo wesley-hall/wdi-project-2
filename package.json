@@ -1,5 +1,5 @@
 {
-  "name": "basic-react-webpack-setup",
+  "name": "ga-ldn-wdi-get-out-in-london",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,11 @@
     "build": "webpack -p",
     "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "Grigorios Anagnostopoulos and Wesley Hall",
   "license": "ISC",
+  "engines": {
+    "node": "11.8.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
