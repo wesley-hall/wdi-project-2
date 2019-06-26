@@ -5,7 +5,9 @@ class Nav extends React.Component {
   constructor() {
     super()
 
-    this.eventcodes = [
+    this.state = { navbarOpen: null }
+
+    this.eventCodes = [
       { code: 'fest', name: 'Festivals'},
       { code: 'live', name: 'Live Music'},
       { code: 'club', name: 'Clubbing/Dance Music'},
@@ -27,7 +29,7 @@ class Nav extends React.Component {
           <Link to="/" className="navbar-item">Get Out in London</Link>
           <a role="button"
             className={`navbar-burger ${this.state.navbarOpen ? 'is-active' : ''}`}
-            onClick={this.toggleNavbar}
+            // onClick={this.toggleNavbar}
             aria-label="menu"
             aria-expanded="false"
           >
@@ -41,7 +43,7 @@ class Nav extends React.Component {
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Event Categories</a>
               <div className="navbar-dropdown">
-                {this.state.eventcodes.map(eventcode =>
+                {this.eventCodes.map(eventcode =>
                   <Link key={eventcode.code} to={`/events/${eventcode.code}`} onClick={this.props.onClick} className="dropdown-item">{eventcode.name}</Link>
                 )}
               </div>
