@@ -5,14 +5,11 @@ import { Link } from 'react-router-dom'
 import Nav from './nav'
 import Footer from './footer'
 
-const skiddleKey = process.env.SKIDDLE_KEY
 
 class EventsIndex extends React.Component {
   constructor() {
     super()
 
-    this.state = {
-    }
   }
 
   componentDidMount() {
@@ -20,15 +17,8 @@ class EventsIndex extends React.Component {
   }
 
   getEvents() {
-    axios.get('https://cors-anywhere.herokuapp.com/https://www.skiddle.com/api/v1/events/search/', {
-      params: {
-        latitude: 51.509865,
-        longitude: -0.118092,
-        radius: 5,
-        order: 'date',
-        eventcode: this.props.match.params.code.toUpperCase(),
-        api_key: skiddleKey
-      }
+    axios.post('/api/events', {
+      eventCode: this.props.match.params.code
     })
       .then(res => this.setState({ events: res.data.results }))
   }
@@ -45,7 +35,6 @@ class EventsIndex extends React.Component {
         </main>
       </div>
     )
-    console.log(this.state.events)
     return (
       <div>
         <Nav onClick={this.getEvents} />
