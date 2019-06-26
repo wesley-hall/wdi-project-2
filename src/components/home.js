@@ -38,6 +38,7 @@ class Home extends React.Component {
                 </div>
               )}
             </div>
+            <h4 className="has-text-centered has-text-grey-lighter is-italic">In memory of Greg</h4>
           </div>
         </div>
       </main>
