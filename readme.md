@@ -1,8 +1,7 @@
-# WDI-project-2
-
-# General Assembly Project 2 : Reacathon
+# General Assembly WDI Project 2: Reactathon
 
 ## Goal: **build a React application** that consumes a **public API**
+
 ### Timeframe
 2 days
 
@@ -16,9 +15,10 @@
 * Webpack
 * Babel
 * Dotenv
+* Body-Parser
 * GitHub
 
-## App name: EventBored
+## App name: Get Out in London
 
 ### App Overview
 Using the Skiddle API, the app presents the user with events taking place in London. The user may  filter the events based on the type they are interested in, such as Concerts or Exhibitions.
@@ -45,3 +45,6 @@ We then expanded on the features to include a filter by event type, and the home
 * On the homepage: Instead of a solid colour background on the button tile, pull an image from the first event in the category to use as a background for the button.
 * On the specific index pages: Enable an option to filter events by date.
 * On the event display page: Add a list of 3 other events in that category at the bottom of the page.
+
+---
+_In memory of Greg_
