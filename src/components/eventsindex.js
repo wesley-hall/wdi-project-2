@@ -10,6 +10,7 @@ class EventsIndex extends React.Component {
   constructor() {
     super()
 
+    this.state = { events: [] }
   }
 
   componentDidMount() {

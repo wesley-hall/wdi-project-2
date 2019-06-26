@@ -12,7 +12,7 @@ class EventsShow extends React.Component {
   constructor() {
     super()
 
-    this.state = {}
+    this.state = { event: null }
   }
 
   componentDidMount() {
