@@ -5,22 +5,20 @@ class Home extends React.Component {
   constructor() {
     super()
 
-    this.state = {
-      eventcodes: [
-        { code: 'fest', name: 'Festivals'},
-        { code: 'live', name: 'Live Music'},
-        { code: 'club', name: 'Clubbing and Dance Music'},
-        { code: 'date', name: 'Dating'},
-        { code: 'theatre', name: 'Theatre/Dance'},
-        { code: 'comedy', name: 'Comedy'},
-        { code: 'exhib', name: 'Exhibitions and Attractions'},
-        { code: 'kids', name: 'Kids/Family'},
-        { code: 'barpub', name: 'Bar/Pub'},
-        { code: 'lgb', name: 'Gay/Lesbian'},
-        { code: 'sport', name: 'Sporting'},
-        { code: 'arts', name: 'The Arts'}
-      ]
-    }
+    this.eventCodes = [
+      { code: 'fest', name: 'Festivals'},
+      { code: 'live', name: 'Live Music'},
+      { code: 'club', name: 'Clubbing and Dance Music'},
+      { code: 'date', name: 'Dating'},
+      { code: 'theatre', name: 'Theatre/Dance'},
+      { code: 'comedy', name: 'Comedy'},
+      { code: 'exhib', name: 'Exhibitions and Attractions'},
+      { code: 'kids', name: 'Kids/Family'},
+      { code: 'barpub', name: 'Bar/Pub'},
+      { code: 'lgb', name: 'Gay/Lesbian'},
+      { code: 'sport', name: 'Sporting'},
+      { code: 'arts', name: 'The Arts'}
+    ]
   }
 
   render() {
@@ -30,11 +28,11 @@ class Home extends React.Component {
           <div className="container container-home">
             <h2 className="title">Get Out in London</h2>
             <div className="tile is-ancestor">
-              {this.state.eventcodes.map(eventcode =>
-                <div key={eventcode.code} className="tile is-parent is-3">
-                  <Link to={`/events/${eventcode.code}`} className="has-text-centered">
-                    <div id={eventcode.code} className="tile is-child box">
-                      {eventcode.name}
+              {this.eventCodes.map(eventCode =>
+                <div key={eventCode.code} className="tile is-parent is-3">
+                  <Link to={`/events/${eventCode.code}`} className="has-text-centered">
+                    <div id={eventCode.code} className="tile is-child box">
+                      {eventCode.name}
                     </div>
                   </Link>
                 </div>
