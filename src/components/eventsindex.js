@@ -19,6 +19,12 @@ class EventsIndex extends React.Component {
     this.getEvents()
   }
 
+  componentDidUpdate(prevProps) {
+    if(prevProps.location !== this.props.location) {
+      this.getEvents()
+    }
+  }
+
   getEvents() {
     window.scroll(0,0)
     axios.post('/api/events', {
