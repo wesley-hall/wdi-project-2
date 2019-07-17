@@ -10,7 +10,9 @@ class EventsIndex extends React.Component {
   constructor() {
     super()
 
-    this.state = { events: [] }
+    this.state = {}
+
+    this.getEvents = this.getEvents.bind(this)
   }
 
   componentDidMount() {
@@ -18,6 +20,7 @@ class EventsIndex extends React.Component {
   }
 
   getEvents() {
+    window.scroll(0,0)
     axios.post('/api/events', {
       eventCode: this.props.match.params.code
     })
